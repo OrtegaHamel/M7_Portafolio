@@ -3,17 +3,39 @@
 {% block title %}Formulario Producto{% endblock %}
 
 {% block content %}
-<div class="card shadow-sm p-4">
-    <h2 class="mb-3">Producto</h2>
+<div class="card shadow p-4">
+    <h3 class="fw-bold mb-4">Datos del Producto</h3>
 
-    <form method="POST" class="row g-3">
+    <form method="POST">
         {% csrf_token %}
-        {{ form.as_p }}
 
-        <div class="d-flex gap-2">
-            <button type="submit" class="btn btn-success">Guardar</button>
-            <a href="{% url 'producto_list' %}" class="btn btn-secondary">Cancelar</a>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label class="form-label fw-semibold">Nombre</label>
+                {{ form.nombre }}
+            </div>
+
+            <div class="col-md-3">
+                <label class="form-label fw-semibold">Precio</label>
+                {{ form.precio }}
+            </div>
+
+            <div class="col-md-3">
+                <label class="form-label fw-semibold">Stock</label>
+                {{ form.stock }}
+            </div>
+        </div>
+
+        <div class="mt-4 d-flex gap-2">
+            <button type="submit" class="btn btn-success px-4">
+                <i class="bi bi-check2-circle"></i> Guardar
+            </button>
+
+            <a href="{% url 'producto_list' %}" class="btn btn-secondary px-4">
+                <i class="bi bi-arrow-left"></i> Cancelar
+            </a>
         </div>
     </form>
 </div>
 {% endblock %}
+

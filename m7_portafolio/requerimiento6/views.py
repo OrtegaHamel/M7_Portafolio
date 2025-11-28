@@ -2,6 +2,10 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import Producto
 from .forms import ProductoForm
 
+# HOME
+def home(request):
+    return render(request, "requerimiento6/home.html")
+
 # LISTAR
 def producto_list(request):
     productos = Producto.objects.all()

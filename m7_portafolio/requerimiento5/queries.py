@@ -1,5 +1,3 @@
-# requerimiento5/queries.py
-
 from datetime import date
 from requerimiento5.models import Cliente, Pedido
 

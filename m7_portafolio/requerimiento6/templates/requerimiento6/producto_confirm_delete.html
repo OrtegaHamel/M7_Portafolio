@@ -3,21 +3,29 @@
 {% block title %}Eliminar Producto{% endblock %}
 
 {% block content %}
-<div class="card shadow-sm p-4 text-center">
+<div class="card shadow p-4 text-center">
 
-    <h3 class="mb-4">¿Eliminar producto?</h3>
+    <i class="bi bi-exclamation-triangle text-danger fs-1"></i>
 
-    <p class="fs-5">Estás por eliminar:  
-        <strong class="text-danger">{{ producto.nombre }}</strong>
+    <h3 class="fw-bold mt-3">Confirmar Eliminación</h3>
+
+    <p class="fs-5">
+        ¿Seguro que deseas eliminar el producto
+        <strong class="text-danger">{{ producto.nombre }}</strong>?
     </p>
 
     <form method="POST" class="mt-4">
         {% csrf_token %}
 
-        <button type="submit" class="btn btn-danger px-4">Eliminar</button>
-        <a href="{% url 'producto_list' %}" class="btn btn-secondary px-4">Cancelar</a>
-    </form>
+        <button type="submit" class="btn btn-danger px-4">
+            <i class="bi bi-trash"></i> Eliminar
+        </button>
 
+        <a href="{% url 'producto_list' %}" class="btn btn-secondary px-4 ms-2">
+            Cancelar
+        </a>
+    </form>
 </div>
 {% endblock %}
+
 
