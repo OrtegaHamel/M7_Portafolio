@@ -135,13 +135,13 @@ La aplicación estará disponible para su uso en la ruta configurada [http://127
 
 ## 📸 Capturas de Pantalla
 
-Puedes incluir aquí capturas de pantalla de la interfaz, como:
-* La página de listado de productos (`/productos/`).
-* El formulario de creación (`/productos/nuevo/`).
-* La página de confirmación de eliminación.
+![Home](capturas/P7_6_3.png)
+![Inventario](capturas/P7_6_4.png)
+![Detalles](capturas/P7_6_6.png)
+![Advertencia Eliminar](capturas/P7_6_5.png)
+![Admin](capturas/P7_6_1.png)
+![Admin2](capturas/P7_6_2.png)
 
-**Ubicación sugerida:**
-`requerimiento6/capturas/`
 
 ## ✅ Conclusión
 

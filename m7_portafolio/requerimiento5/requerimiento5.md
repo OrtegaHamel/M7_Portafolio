@@ -82,14 +82,11 @@ El uso de fecha__range es crucial en este requerimiento, ya que permite generar 
 - Pedido.objects.filter(...): Para aplicar múltiples condiciones de filtrado simultáneamente.  
 - fecha__range: Look-up de campo para filtrar por un rango inclusivo de fechas.
 
-## 📸 Capturas de Pantalla
-Puedes incluir aquí capturas de pantalla que demuestren la ejecución de la consulta, por ejemplo:
+## 📸 Capturas de Pantalla  
 
-Resultado de ejecutar ejemplo_consulta_pedidos_cliente() en la shell de Django.
+![Consulta ORM](capturas/P7_5_1.png)
+![Resultado ORM](capturas/P7_5_2.png)
 
-Ejecución de un test unitario que valide la consulta.
-
-Ubicación sugerida: requerimiento5/capturas/
 
 ## ✅ Conclusión
 Este requerimiento cumple con el objetivo de utilizar las capacidades de filtrado avanzado del ORM de Django. Se demostró cómo combinar la recuperación de objetos específicos con el filtrado por múltiples condiciones y rangos, una técnica fundamental para la extracción de información empresarial y la optimización de QuerySets.

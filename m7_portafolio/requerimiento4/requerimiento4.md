@@ -73,14 +73,11 @@ python manage.py migrate
 ---
 
 ## 📸 Capturas de Pantalla  
-Puedes incluir aquí capturas como:
 
-- Generación de migraciones en consola  
-- Migración aplicada exitosamente  
-- Modelo modificado en el admin o shell  
-
-**Ubicación sugerida:**  
-`requerimiento4/capturas/`
+![Migraciones](capturas/P7_4_1.png)
+![Migraciones2](capturas/P7_4_2.png)
+![Modelo ProductoDemo](capturas/P7_4_3.png)
+![Migraciones actualizadas](capturas/P7_4_4.png)
 
 ---
 

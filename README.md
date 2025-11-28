@@ -1,4 +1,5 @@
-# 📘 Proyecto de Integración de Bases de Datos con Django
+# 📘 M7_Evaluación de portafolio
+Por Álvaro Ortega Hamel
 
 Este repositorio contiene un ejercicio integral diseñado para demostrar las capacidades del framework **Django** en la gestión de datos, modelado, migraciones y patrones de diseño MVC.
 
@@ -119,7 +120,7 @@ Exploración y configuración de las herramientas "baterías incluidas" de Djang
 ## 🛠️ Tecnologías Utilizadas
 * **Lenguaje:** Python 3.x
 * **Framework:** Django 4.x / 5.x
-* **Base de Datos:** SQLite (Configurable a PostgreSQL/MySQL)
+* **Base de Datos:** PostgreSQL
 * **Frontend:** HTML5, CSS3 (Templates de Django)
 
 ---
