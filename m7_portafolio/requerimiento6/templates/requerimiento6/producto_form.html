@@ -1,0 +1,19 @@
+{% extends "requerimiento6/base.html" %}
+
+{% block title %}Formulario Producto{% endblock %}
+
+{% block content %}
+<div class="card shadow-sm p-4">
+    <h2 class="mb-3">Producto</h2>
+
+    <form method="POST" class="row g-3">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <div class="d-flex gap-2">
+            <button type="submit" class="btn btn-success">Guardar</button>
+            <a href="{% url 'producto_list' %}" class="btn btn-secondary">Cancelar</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

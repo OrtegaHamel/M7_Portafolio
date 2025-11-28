@@ -25,7 +25,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'requerimiento1',
     'requerimiento2',
+    'requerimiento3',
+    'requerimiento4',
+    'requerimiento5',
+    'requerimiento6',
+    'requerimiento7',
 ]
 
 MIDDLEWARE = [
@@ -63,8 +69,12 @@ WSGI_APPLICATION = 'm7_portafolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'portafolio_m7_db',
+        'USER': 'postgres',
+        'PASSWORD': 'root',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
